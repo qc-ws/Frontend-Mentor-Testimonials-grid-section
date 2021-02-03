@@ -64,8 +64,6 @@ body {
 }
 
 .card-meta p {
-  color: var(--light-gray);
-  opacity: 0.6;
   font-size: 0.85em;
   margin: 1px;
 }
@@ -87,6 +85,11 @@ body {
   color: hsl(0, 0%, 81%, 0.5);
 }
 
+.page-wrapper>.card-1>.card-profile>.card-meta p {
+color: var(--light-gray);
+opacity: 0.5;
+}
+
 .card-1>.card-text p {
   color: var(--light-gray);
 }
@@ -100,6 +103,11 @@ body {
   color: var(--light-gray);
 }
 
+.page-wrapper>.card-2>.card-profile>.card-meta p {
+color: var(--light-gray);
+opacity: 0.5;
+}
+
 .card-2>.card-text p {
   color: var(--light-gray);
 }
@@ -111,6 +119,11 @@ body {
 
 .page-wrapper>.card-3>.card-profile>.card-meta strong {
   color: var(--very-dark-grayish-blue);
+}
+
+.page-wrapper>.card-3>.card-profile>.card-meta p {
+color: var(--very-dark-grayish-blue);
+opacity: 0.5;
 }
 
 .card-3>.card-text p {
@@ -130,6 +143,11 @@ body {
   color: var(--light-gray);
 }
 
+.page-wrapper>.card-4>.card-profile>.card-meta p {
+color: var(--light-gray);
+opacity: 0.5;
+}
+
 .card-4>.card-text p {
   color: var(--light-gray);
 }
@@ -141,6 +159,11 @@ body {
 
 .page-wrapper>.card-5>.card-profile>.card-meta strong {
   color: var(--very-dark-grayish-blue);
+}
+
+.page-wrapper>.card-5>.card-profile>.card-meta p {
+color: var(--very-dark-grayish-blue);
+opacity: 0.5;
 }
 
 .card-5>.card-text p {
