@@ -1,8 +1,25 @@
+/* Credits */
+.credits {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+}
+
 /* Common */
+:root {
+  --moderate-violet-color: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: hsl(210, 46%, 95%);
+  background: var(--light-grayish-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +27,7 @@ body {
   text-align: left;
   font-size: 13px;
   font-family: 'Barlow Semi Condensed', sans-serif;
+  position: absolute;
 }
 
 .card-1,
@@ -25,12 +43,12 @@ body {
 .card-1,
 .card-2,
 .card-4>.card-text h2 {
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
 }
 
 .card-3,
 .card-5>.card-text h2 {
-  color: hsl(219, 29%, 14%);
+  color: var(--very-dark-blackish-blue);
 }
 
 .card-profile {
@@ -46,14 +64,15 @@ body {
 }
 
 .card-meta p {
-  color: hsl(0, 0%, 60%);
+  color: var(--light-gray);
+  opacity: 0.5;
   font-size: 0.85em;
   margin: 1px;
 }
 
 /* Card 1 */
 .page-wrapper>.card-1 {
-  background: hsl(263, 55%, 52%);
+  background: var(--moderate-violet-color);
 }
 
 .page-wrapper>.card-1>.card-profile img {
@@ -61,7 +80,7 @@ body {
 }
 
 .page-wrapper>.card-1>.card-profile>.card-meta strong {
-  color: hsl(0, 0%, 81%);
+  color: var(--light-gray);
 }
 
 .page-wrapper>.card-1>.card-profile>.card-meta {
@@ -69,38 +88,38 @@ body {
 }
 
 .card-1>.card-text p {
-  color: hsl(0, 0%, 81%);
+  color: var(--light-gray);
 }
 
 /* Card 2 */
 .page-wrapper>.card-2 {
-  background: hsl(217, 19%, 35%);
+  background: var(--very-dark-grayish-blue);
 }
 
 .page-wrapper>.card-2>.card-profile>.card-meta strong {
-  color: hsl(0, 0%, 81%);
+  color: var(--light-gray);
 }
 
 .card-2>.card-text p {
-  color: hsl(0, 0%, 81%);
+  color: var(--light-gray);
 }
 
 /* Card 3 */
 .page-wrapper>.card-3 {
-  background: hsl(0, 0%, 100%);
+  background: var(--white);
 }
 
 .page-wrapper>.card-3>.card-profile>.card-meta strong {
-  color: hsl(217, 19%, 35%);
+  color: var(--very-dark-grayish-blue);
 }
 
 .card-3>.card-text p {
-  color: hsl(217, 19%, 35%);
+  color: var(--very-dark-grayish-blue);
 }
 
 /* Card 4 */
 .page-wrapper>.card-4 {
-  background: hsl(219, 29%, 14%);
+  background: var(--very-dark-blackish-blue);
 }
 
 .page-wrapper>.card-4>.card-profile img {
@@ -108,24 +127,24 @@ body {
 }
 
 .page-wrapper>.card-4>.card-profile>.card-meta strong {
-  color: hsl(0, 0%, 81%);
+  color: var(--light-gray);
 }
 
 .card-4>.card-text p {
-  color: hsl(0, 0%, 81%);
+  color: var(--light-gray);
 }
 
 /* Card 5 */
 .page-wrapper>.card-5 {
-  background: hsl(0, 0%, 100%);
+  background: var(--white);
 }
 
 .page-wrapper>.card-5>.card-profile>.card-meta strong {
-  color: hsl(217, 19%, 35%);
+  color: var(--very-dark-grayish-blue);
 }
 
 .card-5>.card-text p {
-  color: hsl(217, 19%, 35%);
+  color: var(--very-dark-grayish-blue);
 }
 
 /* Responsive Setting */
@@ -156,7 +175,6 @@ body {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     padding: 5% 10%;
-    overflow: hidden;
   }
 
   /* Cards */
