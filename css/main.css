@@ -65,7 +65,7 @@ body {
 
 .card-meta p {
   color: var(--light-gray);
-  opacity: 0.5;
+  opacity: 0.6;
   font-size: 0.85em;
   margin: 1px;
 }
